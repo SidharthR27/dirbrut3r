@@ -19,6 +19,7 @@ for i in directory_list:
         r=requests.get(url2)
         if r.status_code!=404 and len(r.text)>0:
             print(url2)
+            print("\n")
     except:
         pass
 
